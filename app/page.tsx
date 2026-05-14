@@ -260,7 +260,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-purple-500/20 px-4 py-8 text-center text-sm text-gray-400">© 2026 Norah Mashhor Aljandol. Designed with a dark purple AI portfolio style.</footer>
+      <footer className="border-t border-purple-500/20 px-4 py-8 text-center text-sm text-gray-400">© 2026 Norah Mashhor Aljandol. </footer>
     </main>
   )
 }
