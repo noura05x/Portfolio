@@ -98,7 +98,7 @@ export default function Home() {
               </h1>
               <p className="mt-4 text-2xl font-semibold text-purple-200">AI and Data-focused Information Technology Student</p>
               <p className="mt-5 max-w-xl text-lg leading-8 text-gray-300">
-                I build machine learning pipelines, NLP systems, intelligent applications, and Programed solutions that solve real-world problems.
+                I build machine learning pipelines, NLP systems, intelligent applications, and Programmed solutions that solve real-world problems.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
                 <Button asChild className="bg-purple-600 shadow-[0_0_25px_rgba(168,85,247,.45)] hover:bg-purple-500">
