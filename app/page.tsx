@@ -15,7 +15,8 @@ const projects = [
     description: "Agent-based AI system that generates structured curricula including syllabi, slides, labs, and exams from instructor input.",
     image: "/images/projects/minhaj.png",
     tags: ["Python", "LLMs", "Prompt Engineering", "Agent-based AI"],
-    github: "https://github.com/FaiOnayq/minhaj.git",
+    github: "https://github.com/noura05x/Minhaj.git",
+    hasDemo: true
   },
   {
     title: "SEEN – Smart Emergency Necklace System",
@@ -177,11 +178,35 @@ export default function Home() {
                     <p className="text-gray-300">{project.description}</p>
                     <div className="mt-4 flex flex-wrap gap-2">{project.tags.map((tag) => <Badge key={tag} className="bg-purple-500/20 text-purple-100 hover:bg-purple-500/30">{tag}</Badge>)}</div>
                   </CardContent>
-                  <CardFooter>
-                    <Button asChild variant="outline" className="border-purple-400/50 bg-white/5 text-white hover:bg-purple-500/20">
-                      <Link href={project.github} target="_blank"><Github className="mr-2 h-4 w-4" /> GitHub Link</Link>
-                    </Button>
-                  </CardFooter>
+                  <CardFooter className="flex gap-3">
+
+  <Button
+    asChild
+    variant="outline"
+    className="border-purple-400/50 bg-white/5 text-white hover:bg-purple-500/20"
+  >
+    <Link href={project.github} target="_blank">
+      <Github className="mr-2 h-4 w-4" />
+      GitHub
+    </Link>
+  </Button>
+
+  {project.hasDemo && (
+    <Button
+      asChild
+      className="bg-purple-600 hover:bg-purple-500"
+    >
+      <Link
+        href="https://minhaj-ai.vercel.app"
+        target="_blank"
+      >
+        <ExternalLink className="mr-2 h-4 w-4" />
+        Live Demo
+      </Link>
+    </Button>
+  )}
+
+</CardFooter>
                 </Card>
               </AnimatedCard>
             ))}
