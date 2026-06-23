@@ -106,7 +106,7 @@ export default function Home() {
                   <Link href="#projects">View Projects</Link>
                 </Button>
                 <Button asChild variant="outline" className="border-purple-400/50 bg-white/5 text-white hover:bg-purple-500/20">
-                  <Link href="/documents/norah-aljandol-cv.pdf" target="_blank" download><Download className="mr-2 h-4 w-4" />Download CV</Link>
+                  <Link href="/documents/norah_aljandol_CV.pdf" target="_blank" download><Download className="mr-2 h-4 w-4" />Download CV</Link>
                 </Button>
               </div>
               <div className="mt-7 flex gap-5 text-purple-200">
